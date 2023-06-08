@@ -38,7 +38,7 @@ struct ARViewContainer: UIViewRepresentable {
     }
     func updateUIView(_ uiView: ARView, context: Context) {}
 }
-extension ARView{//放置物体 2/2
+extension ARView{
     func tapGesture() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:)))
         self.addGestureRecognizer(tapGestureRecognizer)
